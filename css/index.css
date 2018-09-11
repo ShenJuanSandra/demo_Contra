@@ -1,0 +1,1210 @@
+/* navWrap */
+body {
+    font: 12px/1.5 tahoma, \5b8b\4f53, sans-serif;
+    padding-top: 42px;
+    background-color: #10131A;
+    font-family: '\5FAE\8F6F\96C5\9ED1';
+    position: relative;
+}
+i{
+    font-style: normal;
+}
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, th, td {
+    margin: 0;
+    padding: 0
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-weight: normal;
+    font-style: normal
+}
+
+ol, ul {
+    list-style: none
+}
+
+caption, th {
+    text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.clear {
+    both: clear;
+}
+
+/*padding-top:24px;是预留给公共位置的顶部广告*/
+.ad-top {
+    height: 24px;
+    background-color: #090B0C;
+}
+
+/*nav部分*/
+.navWrap {
+    width: 100%;
+    min-width: 1280px;
+    position: relative;
+    left: 0;
+    height: 105px;
+    z-index: 50;
+    background: #000;
+    opacity: .95;
+    filter: alpha(opacity=95);
+    /*overflow: hidden;*/
+}
+
+.navMask {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    height: 211px;
+    background-color:rgba(0,0,0,.6);
+    opacity: .6;
+    z-index: 5;
+    display: none;
+    top: 105px;
+}
+
+/*当鼠标移到navWrap上时navMask就显示*/
+.navWrap:hover .navMask {
+    display: block;
+}
+
+.n-logo {
+    width: 190px;
+    height: 96px;
+    background: url(../images/n-logo.png) 0 0 no-repeat;
+    position: absolute;
+    left: -80px;
+    top: 5px;
+}
+
+#nav {
+    z-index: 10;
+    margin-left: 155px;
+    padding-top: 34px;
+}
+
+#nav li.na-l {
+    float: left;
+    position: relative;
+    width: 114px;
+    height: 37px;
+    margin-right: 56px;
+    background: url("../images/n-xian.png") 50% bottom no-repeat;
+}
+
+#nav li .na-las {
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    color: #e7dacb;
+    font-weight: bold;
+    text-align: right;
+    line-height: 26px;
+}
+
+.na-la1 {
+    background: url(../images/n-icon1.png) 0 0 no-repeat;
+}
+
+.na-la2 {
+    background: url(../images/n-icon2.png) 0 0 no-repeat;
+}
+
+.na-la3 {
+    background: url(../images/n-icon3.png) 0 0 no-repeat;
+}
+
+.na-la4 {
+    background: url(../images/n-icon4.png) 0 0 no-repeat;
+}
+
+.na-la5 {
+    background: url(../images/n-icon5.png) 0 0 no-repeat;
+}
+
+.na-la6 {
+    background: url(../images/n-icon6.png) 0 0 no-repeat;
+}
+
+.n-container2 {
+    width: 1280px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#nav li ul {
+    position: absolute;
+    top: 76px;
+    left: 0;
+    display: none;
+    width: 114px;
+}
+
+.navWrap:hover #nav ul {
+    display: block;
+    z-index: 60;
+}
+
+#nav ul li {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 36px;
+}
+#nav ul a {
+    color: #fff;
+    font-size: 14px;
+    color: #fff;
+    line-height: 36px;
+    display: block;
+    height: 36px;
+    text-align: center;
+}
+
+#nav ul a:hover {
+    text-decoration: underline
+}
+
+/*大banner start*/
+.banner {
+    width: 100%;
+    height: 1178px;
+    background: url(../images/rp-t.jpg) 50% 0 no-repeat;
+    position: relative;
+    top:-105px;
+    left:0;
+}
+.video{
+    width: 391px;
+    height: 186px;
+    background-color: red;
+    position: absolute;
+    top:290px;
+    left:500px;
+    border:2px solid blue;
+}
+.banner .bTop {
+    height: 500px;
+    background: url(../images/hd-t.jpg) no-repeat;
+}
+
+.banner .bBottom {
+    height: 678px;
+    background: url(../images/hd-b.jpg) no-repeat;
+}
+
+.content {
+    height: 325px;
+    padding-top: 250px;
+    box-sizing: border-box;
+}
+
+.downLoad {
+    width: 180px;
+    height: 325px;
+    float: left;
+    margin-right: 15px;
+}
+
+.dL-erweima img {
+    width: 180px;
+}
+.dL-erweima{
+    position: relative;
+}
+.line{
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 5px;
+    background: url(../images/line.png) no-repeat;
+    animation: line 4.0s ease infinite;
+}
+@keyframes line{
+   0%{
+       transform: translateY(0px);
+   }
+    50%{
+        transform: translateY(175px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.downLoad .aL-apple a {
+    width: 180px;
+    height: 57px;
+    display: block;
+    margin-top: 12px;
+    background: url("../images/icon.png") -44px -1px no-repeat;
+}
+
+.downLoad .aL-android a {
+    width: 180px;
+    height: 57px;
+    display: block;
+    margin-top: 12px;
+    background: url("../images/icon.png") -44px -59px no-repeat;
+}
+
+.contentCenter {
+    width: 456px;
+    height: 323px;
+    background-color: green;
+    float: left;
+    position: relative;
+}
+
+.circle {
+    height: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+
+.circle li {
+    display: block;
+    border-radius: 50%;
+    float: left;
+    margin-right: 10px;
+}
+.circleBg1{
+    background-color:#B1B1B1;
+    width: 16px;
+    height: 16px;
+}
+.circleBg2 {
+    background-color:#EFEFEF;
+    width: 18px;
+    height: 18px;
+}
+
+.contentRight {
+    width: 612px;
+    height: 325px;
+    float: left;
+    margin-left: 17px;
+    position: relative;
+}
+
+.contentRight > ul > li {
+    display: block;
+    width: 89px;
+    height: 38px;
+    float: left;
+    text-align: center;
+}
+
+.contentRight > ul > li > a {
+    color: #B6B6B6;
+    display: block;
+    width: 89px;
+    height: 38px;
+    font-size: 16px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.contentRight .bColor{
+    color: #FF7B33;
+    background: url(../images/e-bg2.jpg) no-repeat 0 32px;
+}
+
+.contentRight .uu {
+    width: 612px;
+    height: 325px;
+    position: absolute;
+    left: 0;
+    top: 40px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.uu li {
+    height: 46px;
+    line-height: 46px;
+    border-bottom: 1px dashed #444447;
+}
+
+.uu .post {
+    color: #5B5A4B;
+    margin: 0 35px 0 7px;
+}
+
+.uu .dat {
+    color: #5B5A4B;
+    float: right;
+    margin-right: 46px;
+}
+
+.uu li:last-child {
+    border-bottom: 0;
+}
+
+.uu a {
+    color: #BFBFBF;
+}
+.uu a:hover{
+    color:#FF7B33;
+}
+
+/*大banner end*/
+
+/*英雄角色 start*/
+    .contents{
+        margin-top: -120px;
+    }
+    .heros {
+        height: 663px;
+        margin-bottom: 10px;
+        position: relative;
+    }
+    .fire1{
+        bottom: -190px;
+        left:600px;
+    }
+    .fire2{
+        bottom: -200px;
+        right:204px;
+    }
+    .fire3{
+        bottom: 200px;
+        right:500px;
+    }
+    .fire4{
+        bottom: 68px;
+        right:500px;
+    }
+    .fire5{
+        bottom: 0;
+        right:0;
+    }
+    .fires>span{
+        width: 19px;
+        height: 19px;
+        display: block;
+        background: url(../images/fire.png) no-repeat;
+        position: absolute;
+        opacity: 1;
+        animation: moveFire 2s linear infinite;
+    }
+    @keyframes moveFire {
+        0% {
+            transform: translate(-160px, 0px);
+        }
+        100% {
+            transform: translate(-500px, -1000px);
+        }
+    }
+    .heros .heroTittle {
+        height: 89px;
+        background: url(../images/tit.png) no-repeat 0 0;
+        background-position-x: 230px;
+    }
+    .heroInfo {
+        height: 574px;
+        margin-top: 20px;
+    }
+    .heroInfo .infoLeft {
+        width: 612px;
+        height: 574px;
+        float: left;
+        margin-left: 20px;
+    }
+    .infoLeft .nameLeft {
+        width: 429px;
+        height: 235px;
+        float: left;
+        margin-left: 20px;
+    }
+    .nameLeft div {
+        overflow: hidden;
+    }
+    .nameLeft h3 {
+        width: 429px;
+        height: 79px;
+        line-height: 120px;
+        font-size: 24px;
+        color: white;
+        margin-left: 5px;
+    }
+    .nameLeft .heroText {
+        color: #B9B9B9;
+        font-size: 13px;
+    }
+    .nameLeft li strong {
+        /*width: 429px;*/
+        height: 110px;
+        display: block;
+        float: left;
+        font-size: 64px;
+        line-height: 110px;
+        color: #B55115;
+    }
+
+    .nameLeft span {
+        display: block;
+        margin-left: 10px;
+        padding-top: 16px;
+        padding-left: 31px;
+        width: 96px;
+        height: 110px;
+        float: left;
+        font-size: 48px;
+        color: #E6A060;
+        background: url(../images/hz-icon10.png) no-repeat;
+    }
+
+    .heroText {
+        font-size: 12px;
+        color: white;
+    }
+
+    .infoLeft .nameRight {
+        width: 183px;
+        height: 235px;
+        float: left;
+        position: relative;
+    }
+
+    .heroName {
+        height: 235px;
+        border-bottom: 1px solid #1F2020;
+    }
+
+    .infoLeft .nameRight a {
+        width: 120px;
+        height: 44px;
+        border: 1px solid #BA511B;
+        background-color: #673311;
+        position: absolute;
+        top: -65px;
+        left: 440px;
+        text-align: center;
+        line-height: 44px;
+        font-size: 20px;
+        color: white;
+    }
+
+    .heroInfo .infoRight {
+        width: 500px;
+        height: 574px;
+        float: left
+    }
+
+    .heroSmallImg {
+        margin-top: 30px;
+        height: 668px;
+        position: relative;
+    }
+
+    .heroSmallImg ul {
+        height: 668px;
+        position: absolute;
+        top: -65px;
+        left: 0;
+    }
+
+    .heroSmallImg li {
+        width: 108px;
+        height: 100px;
+        float: left;
+        display: block;
+        margin-right: 13px;
+        margin-top: 60px;
+        box-sizing: border-box;
+        position: relative;
+    }
+    .heroSmallImg div{
+        position: absolute;
+        top:87px;
+        left:0;
+        width: 108px;
+        height: 0;
+        line-height: 87px;
+        text-align: center;
+        color:#ffdca7;
+        font-size: 14px;
+        background-color: rgba(0,0,0,.8);
+        display: none;
+    }
+    .heroSmallImg li a {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .heroSmallImg li h4 {
+        text-align: center;
+        font-size: 14px;
+        color: white;
+        margin-top: 12px;
+    }
+
+    .heroSmallImg li:nth-child(5n) {
+        margin-left: 0;
+    }
+
+    .infoRight {
+        position: relative;
+    }
+
+    .infoRight img {
+        position: absolute;
+        top: -70px;
+        left: -25px;
+    }
+
+    /*英雄角色 end*/
+/*武器介绍 strat*/
+.weapons {
+    height: 612px;
+    margin-top: 100px;
+}
+
+.weapons .weaponTittle {
+    height: 91px;
+    background: url(../images/tit.png) no-repeat 0 -90px;
+    background-position-x: 230px;
+}
+
+.weapons .weaopnInfos {
+    /*background-color: mediumvioletred;*/
+    height: 521px;
+}
+
+.weaopnInfos > ul {
+    margin-left: 40px;
+    position: relative;
+}
+
+.weaopnInfos > ul > li {
+    width: 143px;
+    height: 66px;
+    display: block;
+    float: left;
+    line-height: 66px;
+    text-align: center;
+    font-size: 16px;
+    border-bottom: 1px solid #241D1A;
+}
+
+.weaopnInfos > ul > li a {
+    color: #B5B5B5;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.weaponBg{
+    background: url(../images/e-bg2.jpg) no-repeat;
+    background-position: 0 60px;
+    color: #FF5C1F;
+}
+.weaopnInfos > ul > li a:hover {
+    background: url(../images/e-bg2.jpg) no-repeat;
+    background-position: 0 60px;
+    color: #FF5C1F;
+}
+
+.weaponLis {
+    width: 1239px;
+    height: 369px;
+    position: absolute;
+    top: 60px;
+    left: -20px;
+    margin-top: 30px;
+
+}
+.weaponLis li {
+    width: 289px;
+    height: 177px;
+    display: block;
+    position: relative;
+    float: left;
+    background: url("../images/li-bg.png") no-repeat;
+    margin-right: 27px;
+    margin-top: 20px;
+    transition: all 2s;
+    overflow: hidden;
+}
+.weaponLis>li>img:hover{
+    transform: scale(1.1);
+}
+.weaponLis p {
+    position: absolute;
+    top: 125px;
+    left: 122px;
+    color: white;
+}
+
+.weaponLis li:nth-child(4n) {
+    margin-right: 0;
+}
+
+.weaponLis p {
+    text-align: center;
+}
+
+/*武器介绍 end*/
+
+/*赛事中心 start*/
+.games {
+    height: 562px;
+    margin-top: 50px;
+}
+.games .gameTittle {
+    height: 92px;
+    background: url(../images/tit.png) no-repeat 0 -546px;
+    background-position-x: 230px;
+}
+.games .gameInfo {
+    height: 467px;
+    /*background-color: pink;*/
+    margin-top:26px;
+    overflow: hidden;
+    position: relative;
+}
+.gameInfo>ul>li{
+    width: 142px;
+    height: 68px;
+    display: block;
+    float:left;
+    line-height: 68px;
+    font-size: 18px;
+    margin-right: 38px;
+    /*text-align: center;*/
+}
+.gameInfo > ul > li > a {
+    color: #B5B5B5;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin-left: 10px;
+    text-align: center;
+}
+.gameInfo > ul > li > a:hover{
+    color:#DB5927;
+}
+.gameBg{
+    background: url(../images/e-bg2.jpg) no-repeat;
+    background-position: 0 62px;
+}
+.gameInfo > ul > li > a:hover {
+    background: url(../images/e-bg2.jpg) no-repeat;
+    background-position: 0 62px;
+}
+.gameCenter{
+    width: 1239px;
+    height: 399px;
+    position: absolute;
+    top:109px;
+    left:0;
+}
+.gameCenter>a{
+    display: block;
+    width: 258px;
+    height: 358px;
+    float:left;
+    margin-left: 12px;
+    transition: all 2s;
+    overflow: hidden;
+}
+.gameCenter>a:hover img{
+    transform: scale(1.1);
+}
+.gameCenter>ul{
+    width: 515px;
+    height: 358px;
+    display: block;
+    float:left;
+    margin-left: 37px;
+}
+.gameLis>li{
+    height: 50px;
+    display: block;
+    float: left;
+    text-align: left;
+}
+.gameLis>li a{
+    color:#B5B5B5;
+    width:459px;
+    height: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 16px;
+    float: left;
+}
+.gameLis>li a:hover{
+    color:#DB5927;
+}
+.gameLis>li span{
+    float:right;
+    color:#B5B5B5;
+}
+.gameTime {
+    width: 400px;
+    height: 358px;
+    /*background-color: green;*/
+    float: left;
+    margin-left: 16px;
+}
+.gameTime{
+    position: relative;
+}
+.gameTime>a{
+    position: absolute;
+    top:-115px;
+    left:155px;
+    color:#B5B5B5;
+    font-size: 18px;
+}
+.gameTop>p{
+    width: 306px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    color:#DB5927;
+    border-bottom:1px solid #DB5927;
+    margin-left: 60px;
+    margin-top: 10px;
+    line-height: 30px;
+    padding-bottom: 16px;
+}
+.gameBottom>ul>li{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    color:#B5B5B5;
+}
+.gameBottom strong{
+    float:left;
+    margin-left: 75px;
+}
+.gameBottom span{
+    float:left;
+    margin-left: 50px;
+}
+/*赛事中心 end*/
+
+/*攻略中心 start*/
+.stratgy {
+    height: 570px;
+    margin-top: 80px;
+}
+
+.stratgy .stratgyTittle {
+    height: 100px;
+    background: url(../images/tit.png) no-repeat 0 -180px;
+    background-position-x: 230px;
+}
+
+.stratgy .stratgyInfo {
+    height: 434px;
+    width: 100%;
+    margin-top: 44px;
+    /*background-color: red;*/
+}
+.stratgyInfo>ul>li{
+    /*display: block;*/
+    float: left;
+    margin-left: 20px;
+    border:2px solid #B65217;
+}
+.stratgyInfo>ul>li:first-child{
+    margin-left: 0;
+}
+.stratgyInfo>ul>li>a>img{
+    float:left;
+}
+.sContent{
+    width: 730px;
+    height: 429px;
+    float: left;
+}
+/*第一张图片里面的内容*/
+.s1{
+    height: 49px;
+    width: 500px;
+    position: relative;
+    border-bottom:1px solid #2C2727;
+    margin-left: 30px;
+    margin-right: 200px;
+    box-sizing: border-box;
+}
+.s1>li{
+    width: 100px;
+    height: 49px;
+    float:left;
+    text-align: center;
+    line-height: 49px;
+    font-size: 16px;
+}
+.s1>li>a{
+    color:#B5B5B5;
+    font-weight: bold;
+}
+.s1>li>a:hover{
+    color:#B65217;
+}
+.s1>li>ul{
+    width: 689px;
+    height: 355px;
+    position: absolute;
+    top:49px;
+    left:-20px;
+    margin-top: 25px;
+}
+.s1>li>ul>li{
+    width: 209px;
+    height: 177px;
+    display: block;
+    float:left;
+    margin-left: 20px;
+}
+.s1>li>ul>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.s1>li>ul img{
+    width: 209px;
+    height: 103px;
+}
+.s1 p{
+    display: block;
+    width: 209px;
+    height: 32px;
+    line-height: 32px;
+    background-color: black;
+    margin-top: -74px;
+    font-size: 12px;
+    padding-right: 5px;
+    box-sizing: border-box;
+}
+.s1 p>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    color:#B9B9B9;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.s1 div>a{
+    width: 209px;
+    height: 42px;
+    display: block;
+    color:#848383;
+    text-align: left;
+    font-size: 14px;
+}
+/*第二张图片的内容*/
+.s2{
+    background-color: #201e1e;
+}
+.s2>li{
+    display: block;
+    width: 610px;
+    height: 124px;
+    border-bottom: 1px solid #363232;
+    padding:0 20px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    margin-left: 32px;
+}
+.s2>li:last-child{
+    border-bottom: 0;
+}
+.s2>li>h4{
+    float:left;
+    background-color: #9C4919;
+    width: 70px;
+    height: 42px;
+    text-align: center;
+    line-height: 42px;
+    margin-top: 35px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#E8E7E7;
+}
+.s2>li>a{
+    float: left;
+    color:#E8E7E7;
+    margin-left: 52px;
+    margin-top: 40px;
+    color:#BFBFBF;
+    font-size: 20px;
+}
+.s2>li>a:hover{
+    color:#9C4919;
+}
+/*第三张图片的内容*/
+.s3{
+    position: relative;
+}
+.s3>li{
+    float: left;
+    width: 48px;
+    height: 50px;
+    /*background-color: red;*/
+    margin-left: 30px;
+    display: block;
+    line-height: 50px;
+    margin-right: 10px;
+}
+.s3>li>a{
+    font-size: 18px;
+    color:#BFBFBF;
+}
+.s3>li>a:hover{
+    color:#9C4919;
+}
+.s3>li>ul{
+    position: absolute;
+    top:50px;
+    left:0;
+}
+.s3>li>ul>li{
+    width: 708px;
+    height: 46px;
+    line-height: 46px;
+    border-bottom:1px dashed #363232;
+    margin-right: -15px;
+    margin-right: 28px;
+    font-size: 14px;
+}
+.s3>li>ul>li i{
+    float:left;
+    color:#5B5A4B;
+    margin-left: 22px;
+
+}
+.s3>li>ul>li a{
+    float: left;
+    color:#BFBFBF;
+    margin-left: 30px;
+}
+.s3>li>ul>li a:hover{
+    color:#9C4919;
+}
+.s3>li>ul>li span{
+    float:right;
+    color:#5B5A4B;
+    margin-right: 40px;
+    font-size: 16px;
+}
+/*攻略中心 end*/
+
+/*专题中心 start*/
+.specials {
+    height: 430px;
+    margin-top: 80px;
+}
+
+.specials .specialTittle {
+    height: 91px;
+    background: url(../images/tit.png) no-repeat 0 -638px;
+    background-position-x: 230px;
+}
+
+.specials .specialInfo {
+    height: 335px;
+    position: relative;
+}
+.specialInfo>ul{
+    width: 1248px;
+    height: 295px;
+    border-bottom:1px solid #1D222C;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.specialInfo>ul>li{
+    width: 412px;
+    height: 52px;
+    float: left;
+    font-size: 24px;
+    margin-left: 3px;
+    color:#73829D;
+    border:1px solid #1D222C;
+    padding-left: 136px;
+    box-sizing: border-box;
+    position: relative;
+    padding-top: 6px;
+}
+.lightColor{
+    background: url(../images/tit.png) no-repeat 0 -781px;
+}
+.deepColor{
+    background: url(../images/tit.png) no-repeat 0 -729px;
+}
+.specialInfo>ul>li>a{
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: absolute;
+    top:14px;
+    right:146px;
+}
+.specialLists{
+    width: 1248px;
+    height: 198px;
+    margin-top: 53px;
+    margin-left: -140px;
+}
+
+.specialLists>li{
+    width: 290px;
+    height: 198px;
+    display: block;
+    float:left;
+    overflow: hidden;
+    margin-right: 29px;
+    transition: all 0.2s;
+
+}
+.specialLists>li>a{
+    width: 100%;
+    height: 100%;
+    display: block;
+    background-color: #000000;
+    font-size: 14px;
+    color:#B4460A;
+    text-align: center;
+}
+.specialLists>li:last-child{
+    margin-right: 0;
+}
+.specialLists>li>a>img{
+    width: 290px;
+    height: 135px;
+    margin-bottom: 5px;
+}
+.specialLists>li>a>img:hover{
+    transform: scale(1.1);
+}
+.specialLists>li>a>span{
+    color:#9EB99E;
+    line-height: 30px;
+}
+.margin1{
+    margin-left:-555px;
+}
+.margin2{
+    margin-left: -970px;
+}
+/*专题中心 end*/
+
+/*游戏特色start*/
+.unique {
+    height: 753px;
+    margin-top: 65px;
+}
+
+.unique .uniqueTittle {
+    height: 91px;
+    background: url(../images/tit.png) no-repeat 0 -454px;
+    background-position-x: 230px;
+}
+
+.unique .uniqueInfo {
+    height: 662px;
+    /*background-color: pink;*/
+    text-align: center;
+    position: relative;
+}
+.uniqueInfo a{
+    width: 66px;
+    height: 47px;
+    display: block;
+}
+.left{
+    position: absolute;
+    top:285px;
+    left:0;
+    background: url(../images/icon.png) no-repeat -45px -118px;
+}
+.right{
+    position: absolute;
+    top:285px;
+    right:0;
+    background: url(../images/icon.png) no-repeat -112px -118px;
+}
+/*游戏特色end*/
+
+/*footer start*/
+footer {
+    width: 100%;
+    height: 254px;
+    /*background-color: purple;*/
+    position: relative;
+    margin-top: 10px;
+}
+.footer{
+    width: 626px;
+    height: 182px;
+    position: absolute;
+    top:60px;
+    left:365px;
+    color:#494949;
+    /*background-color: yellow;*/
+}
+.tencent{
+    width: 180px;
+    height: 35px;
+    display: block;
+    float:left;
+    background: url(../images/foot-light.png) no-repeat;
+    margin-left: 125px;
+}
+.timi{
+    width: 143px;
+    height: 40px;
+    display: block;
+    background: url(../images/timi_logo.png) no-repeat;
+    float: left;
+    margin-right: 167px;
+}
+.footer>div>p{
+    margin-bottom: 3px;
+}
+.footer img{
+    margin-right: 4px;
+    margin-bottom: -3px;
+}
+/*footer start*/
